@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #d4a132, #ab4520);
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background: white;
+  width: 350px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-size: 20px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#nomeUsuario {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#btnAdicionar {
+  background: #ff9100;
+  color: white;
+}
+
+.filtros {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.filtros button {
+  flex: 1;
+  margin: 2px;
+  background: #eee;
+}
+
+li {
+  background: #f5f5f5;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+li.concluida {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.acoes button {
+  margin-left: 5px;
+  background: transparent;
+}
+
+body.dark {
+  background: #121212;
+  color: white;
+}
+
+body.dark .app {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.dark li {
+  background: #2c2c2c;
+}
+
+body.dark input {
+  background: #2c2c2c;
+  color: white;
+  border: none;
+}
